@@ -14,14 +14,14 @@ const AddUser = (props) => {
     if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
       setError({
         title: "Invalid input",
-        message: "Set valid name and age",
+        message: "Please enter a valid name and age",
       });
       return;
     }
     if (+enteredAge < 1) {
       setError({
         title: "Invalid age",
-        message: "Set valid age",
+        message: "Please enter a valid age",
       });
       return;
     }
